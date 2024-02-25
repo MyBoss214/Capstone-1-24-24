@@ -3,24 +3,29 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>APPCycling</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- product card -->
-    
+    <!-- assets css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- end of assets css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-
     <link rel="stylesheet" href="style.css">
     </head>
+
+
+
+
     <body>
     <!-- header -->
-    <div>
+  <div>
       <nav class="navbar navbar-expand-lg fixed-top ">
           <div class="container-fluid z-3 d-flex align-middle justify-content-center" >
               <!-- logo -->
             <div class=" navbar-brand position absolute " href="#">
               <!-- logo -->
-              <img class="logo pt-lg-4 pt-md-0" src="logo.png" alt="logo" style="margin-top:-30px;">
-              <h2 class="collapse navbar-collapse" id="navbarSupportedContent"><em><strong>APP</strong></em><em>Cycling</em></h2>
+              <img class="logo pt-lg-4 pt-md-0" src="logo.png" alt="logo" style="margin-top:-15px;">
+        
             </div>
             <button class="navbar-toggler" style="margin-top:-45px;"type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -31,17 +36,17 @@
                   <a class="nav-link " aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">Purchase History</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
+                    Sign in
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="tables.data.html"> Purchase history</a></li>
+                    <li><a class="dropdown-item" href="#">Log In</a></li>
+                    <li><a class="dropdown-item" href="tables.data.html"> Purchase History ---Register ni</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="login.html">Register</a></li>
+                    <li><a class="dropdown-item" href="login.html">Register --logout ni</a></li>
                   </ul>
                 </li>
                 <!-- profile -->
@@ -55,21 +60,66 @@
                   </a>
                 </li>
               </ul>
+              <!-- search bar -->
+              
               <form class=" search_tab" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input id="find" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success search_btn" type="submit">Search</button>
               </form>
               <!-- icons -->
-              <div class="notifications">
+              <div class=" d-flex d-flex justify-content-start w-25 ">
+                  <!-- notification bell -->
+                  <div class="dropdown p-2 ">
+                    <a href="" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                    <i class="fa-solid fa-bell position-relative" style="color: #2e3235;">
+                      <span style="font-size: .58rem;" class=" position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        10
+                        
+                      </span>
+                    </i>
                   
-                  <a href=""><i class="fa-solid fa-bell" style="color: #2e3235;"></i></a>
-                  <a href="chat2.html"><i class="fa-solid fa-message" style="color: #2e3235;"></i></a>
-                  <a href="add_to_cart.html"><i class="fa-solid fa-cart-shopping" style="color: #2e3235;"></i></a>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-notification ">
+                      <li><a class="dropdown-item text-start text-wrap bg-body-secondary" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a odit deserunt quisquam provident! Iusto, perspiciatis suscipit, fugiat ab, voluptate voluptatum officia vitae ipsa quam similique numquam magni ducimus dolorem!</a></li>
+                      <hr>
+                      <li><a class="dropdown-item text-start text-wrap bg-body-secondary" href="tables.data.html"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis culpa cumque illum, non nihil inventore incidunt nam nemo, distinctio expedita perferendis corrupti autem, sed fugiat fugit doloribus ad. Ea, laudantium?</a></li>
+                      <hr>
+                      <li><a class="dropdown-item text-start text-wrap bg-body-secondary" href="login.html">Sent a messages</a></li>
+                    </ul>
+                  </div>
+                    <!-- chat -->
+                  <!-- <a href="chat2.html" class="p-2 flex-fill bd-highlight"><i class="fa-solid fa-message" style="color: #2e3235;"></i></a> -->
+                  <div class="dropdown p-2 ">
+                    <a href="" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                      <i class="fa-solid fa-cart-shopping position-relative" style="color: #2e3235;">
+                        <span style="font-size: .58rem;" class=" position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          69
+                          <span class="visually-hidden">
+                            unread messages
+                          </span>
+                      </i>
+                  
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-notification ">
+                      <li><a class="dropdown-item text-start text-wrap bg-body-secondary" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a odit deserunt quisquam provident! Iusto, perspiciatis suscipit, fugiat ab, voluptate voluptatum officia vitae ipsa quam similique numquam magni ducimus dolorem!</a></li>
+                      <hr>
+                      <li><a class="dropdown-item text-start text-wrap bg-body-secondary" href="tables.data.html"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis culpa cumque illum, non nihil inventore incidunt nam nemo, distinctio expedita perferendis corrupti autem, sed fugiat fugit doloribus ad. Ea, laudantium?</a></li>
+                      <hr>
+                      <li><a class="dropdown-item text-start text-wrap bg-body-secondary" href="login.html">Sent a messages</a></li>
+                    </ul>
+                  </div>
+                    <ul class="dropdown-menu dropdown-menu-notification ">
+                      <li><a class="dropdown-item text-start text-wrap bg-body-secondary" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis a odit deserunt quisquam provident! Iusto, perspiciatis suscipit, fugiat ab, voluptate voluptatum officia vitae ipsa quam similique numquam magni ducimus dolorem!</a></li>
+                      <hr>
+                      <li><a class="dropdown-item text-start text-wrap bg-body-secondary" href="tables.data.html"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis culpa cumque illum, non nihil inventore incidunt nam nemo, distinctio expedita perferendis corrupti autem, sed fugiat fugit doloribus ad. Ea, laudantium?</a></li>
+                      <hr>
+                      <li><a class="dropdown-item text-start text-wrap bg-body-secondary" href="login.html">Sent a messages</a></li>
+                    </ul>
               </div>
             </div>
           </div>
       </nav>
-    </div>
+  </div>
       <!-- end of header -->
 
     <!--carousel  -->
@@ -103,16 +153,18 @@
 
     <!--product content header  -->
     <div class="p-3 text-center my-auto">
-      <h1 class="mb-3">POPULAR PRODUCTS
+      <h1 class="mb-3">SCRAPS MATERIALS
       </h1>
       
-      <div class="container w-25">
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Popular Product</option>
-          <option value="1">Category 1</option>
-          <option value="2">Category 2</option>
-          <option value="3">Category 3</option>
+      <div class="form-floating container w-25 px-0">
+        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+          <option value="1">All</option>
+          <option value="2">Metal</option>
+          <option value="3">Textile</option>
+          <option value="4">Electronics</option>
+          
         </select>
+        <label for="floatingSelect" >Category</label>
       </div>
     </div>
 
@@ -130,13 +182,13 @@
       <div class="card-body mt-3 mb-3  ">
           <div class="row">
               <div class="col-10">
-                  <h4 class="card-title "><a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">Product title</a></h4>
+                  <h4 class="card-title "><a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">Product Name</a></h4>
                   <p class="card-text">
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
-                      (123)
+                      Item Category
                   </p>
               </div>
               <div class="col-2">
@@ -195,7 +247,7 @@
             </div>
             <!-- end of modal carousel -->
             <div class="modal-header">
-              <h5 class="modal-title fw-semibold px-0" id="exampleModalLabel">Product title</h5>
+              <h5 class="modal-title fw-semibold px-0" id="exampleModalLabel">Product Name</h5>
               
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eum officiis reprehenderit aliquam debitis nostrum nulla, modi ad architecto incidunt nemo perferendis omnis voluptatem, doloremque eveniet nisi minima quae? Recusandae?
@@ -217,13 +269,13 @@
       <div class="card-body mt-3 mb-3  ">
           <div class="row">
               <div class="col-10">
-                  <h4 class="card-title "><a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Product title</a></h4>
+                  <h4 class="card-title "><a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Product Name</a></h4>
                   <p class="card-text">
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
-                      (123)
+                      Item Category
                   </p>
               </div>
               <div class="col-2">
@@ -249,13 +301,13 @@
       <div class="card-body mt-3 mb-3  ">
           <div class="row">
               <div class="col-10">
-                  <h4 class="card-title "><a href="#" class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Product title</a></h4>
+                <h4 class="card-title">Product Name</h4>
                   <p class="card-text">
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
-                      (123)
+                      Item Category
                   </p>
               </div>
               <div class="col-2">
@@ -281,13 +333,13 @@
       <div class="card-body mt-3 mb-3 ">
           <div class="row">
               <div class="col-10">
-                  <h4 class="card-title">Product title</h4>
+                  <h4 class="card-title">Product Name</h4>
                   <p class="card-text">
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
-                      (123)
+                      Item Category
                   </p>
               </div>
               <div class="col-2">
@@ -313,13 +365,13 @@
       <div class="card-body mt-3 mb-3 ">
           <div class="row">
               <div class="col-10">
-                  <h4 class="card-title">Product title</h4>
+                  <h4 class="card-title">Product Name</h4>
                   <p class="card-text">
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
-                      (123)
+                      Item Category
                   </p>
               </div>
               <div class="col-2">
@@ -345,13 +397,13 @@
       <div class="card-body mt-3 mb-3 ">
           <div class="row">
               <div class="col-10">
-                  <h4 class="card-title">Product title</h4>
+                  <h4 class="card-title">Product Name</h4>
                   <p class="card-text">
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
-                      (123)
+                      Item Category
                   </p>
               </div>
               <div class="col-2">
@@ -377,13 +429,13 @@
       <div class="card-body mt-3 mb-3 ">
           <div class="row">
               <div class="col-10">
-                  <h4 class="card-title">Product title</h4>
+                  <h4 class="card-title">Product Name</h4>
                   <p class="card-text">
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
-                      (123)
+                      Item Category
                   </p>
               </div>
               <div class="col-2">
@@ -409,13 +461,13 @@
       <div class="card-body mt-3 mb-3 ">
           <div class="row">
               <div class="col-10">
-                  <h4 class="card-title">Product title</h4>
+                  <h4 class="card-title">Product Name</h4>
                   <p class="card-text">
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
-                      (123)
+                      Item Category
                   </p>
               </div>
               <div class="col-2">
@@ -441,13 +493,13 @@
       <div class="card-body mt-3 mb-3 ">
           <div class="row">
               <div class="col-10">
-                  <h4 class="card-title">Product title</h4>
+                  <h4 class="card-title">Product Name</h4>
                   <p class="card-text">
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
-                      (123)
+                      Item Category
                   </p>
               </div>
               <div class="col-2">
@@ -473,13 +525,13 @@
       <div class="card-body mt-3 mb-3 ">
           <div class="row">
               <div class="col-10">
-                  <h4 class="card-title">Product title</h4>
+                  <h4 class="card-title">Product Name</h4>
                   <p class="card-text">
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
-                      (123)
+                      Item Category
                   </p>
               </div>
               <div class="col-2">
@@ -505,13 +557,13 @@
       <div class="card-body mt-3 mb-3 ">
           <div class="row">
               <div class="col-10">
-                  <h4 class="card-title">Product title</h4>
+                  <h4 class="card-title">Product Name</h4>
                   <p class="card-text">
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
-                      (123)
+                      Item Category
                   </p>
               </div>
               <div class="col-2">
@@ -537,13 +589,13 @@
       <div class="card-body mt-3 mb-3 ">
           <div class="row">
               <div class="col-10">
-                  <h4 class="card-title">Product title</h4>
+                  <h4 class="card-title">Product Name</h4>
                   <p class="card-text">
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
                       <i class="bi bi-star-fill text-warning"></i>
-                      (123)
+                      Item Category
                   </p>
               </div>
               <div class="col-2">
@@ -621,7 +673,7 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               <!-- Content -->
-              <h6 class="text-uppercase fw-bold">Company name</h6>
+              <h6 class="text-uppercase fw-bold">SYNTAX TERMINATORS</h6>
               <hr
                   class="mb-4 mt-0 d-inline-block mx-auto"
                   style="width: 60px; background-color: #7c4dff; height: 2px"
@@ -720,6 +772,36 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+<!-- search script -->
 
-  </body>
+<script type="text/javascript">
+// id = find
+// product = card
+// name = h4
+
+  function search() {
+    let filter = document.getElementById('find').value/toUpperCase();
+    let item = document.querySelectorAll('.card');
+    let l = document.getElementsByTagName('h4');
+
+    for(var i = 0;i<=l.length;i++){
+      let a=item[i].getElementsByTagName('h4')[0];
+
+      let value=a.innerHTML || a.innerText || a.textContent;
+
+      if(value.toUpperCase().indexOf(filter) > -1){
+        item[i].style.display="";
+      }
+      else
+      {
+        item[i].style.display="none";
+      }
+
+    }
+
+  }
+
+
+</script>
+</body>
 </html>

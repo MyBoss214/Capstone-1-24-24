@@ -1,5 +1,5 @@
 /* 
-color pallete
+color pallette
 
 85a38c - gray
 F2F2E2 - white 
@@ -44,6 +44,7 @@ nav{
 }
 
 
+
 /* profile  */
 .nav-item a{
     font-weight: bolder;
@@ -57,16 +58,15 @@ nav{
 /* search */
 .search_tab {
     display: flex;
-    flex: 2;
+    align-self: flex-start;
+    flex:2 ;
 }
 
 /* notif */
-.notifications{
-    display: flex;
-    justify-content: space-between;
-    font-size: 23px;
-    width: 100px;
-    margin: 0 10px;
+
+.dropdown-menu-notification{
+    min-width: 400px;
+    
 }
 
 /* dropdown */
